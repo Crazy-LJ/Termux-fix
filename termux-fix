@@ -1,0 +1,24 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+#color
+R='\e[1;31m'
+G='\e[1;32m'
+
+echo -e " use only if any error..."
+echo -e " $R WARRNING:This tool can damage your termux \n when used without any error"
+echo -e "use Ctrl+c to cancel "
+sleep 5s
+echo "cheecking source file "
+echo "deb https://termux.net stable main" > ${PREFIX}/etc/apt/sources.list
+echo "editting scource file ..."
+sleep 2s
+echo -e "removing source.list.d......"
+rm -rf ${PREFIX}/etc/apt/sources.list.d
+sleep 2s
+echo -e "done..."
+echo -e " $G Trying to update..!"
+echo -e " $R if same problem occur after updating  please reinstall termux "
+sleep 2s
+pkg update
+stty sane
+# THIS FILE IS CREATED BY DARK-ENGLE-WARRIOR
