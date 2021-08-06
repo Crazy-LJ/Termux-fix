@@ -21,4 +21,4 @@ echo -e " $R if same problem occur after updating  please reinstall termux "
 sleep 2s
 pkg update
 stty sane
-# THIS FILE IS CREATED BY DARK-ENGLE-WARRIOR
+# THIS FILE IS CREATED BY Crazy-LJ
